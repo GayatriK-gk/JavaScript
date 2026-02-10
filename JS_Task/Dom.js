@@ -1,1 +1,1 @@
-document.getElementById("msg").textarea="Hello Gayatri!";
+document.getElementById("msg").textContent="Hello Gayatri!";
