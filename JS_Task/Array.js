@@ -1,7 +1,7 @@
 let fruits=["Apple","Mango","Grapes","Banana"];
 
 console.log(fruits);
-colsole.log(fruits[0]);
+console.log(fruits[0]);
 console.log(fruits[1]);
 
 fruits.push("Orange");
