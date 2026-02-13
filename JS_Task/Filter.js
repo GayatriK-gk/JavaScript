@@ -1,0 +1,8 @@
+document.querySelector("#btn").addEventListener("click",function(){
+    let numbers=[1,2,3,4,5,6,7,8,9,10];
+
+    let evenNumbers=numbers.filter(function(num){
+        return num%2===0;
+    });
+    document.querySelector("#output").innerText=evenNumbers;
+});
