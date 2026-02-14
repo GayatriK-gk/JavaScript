@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empty Check</title>
+</head>
+<body>
+    <h2>Enter Your Nmae:</h2>
+    <input type="text" id="username" placeholder="Type your name:">
+    <button id="btn">Submit</button>
+    <h3 id="result"></h3>
+    <script>
+        const button=document.getElementById("btn");
+        button.addEventListener("click",function(){
+            const name=document.getElementById("username").value;
+            if(name===""){
+                document.getElementById("result").innerHTML="please enter your name";
+            }
+            else{
+                document.getElementById("result").innerHTML="Hello "+name;
+            }
+        });
+    </script>
+</body>
+</html>

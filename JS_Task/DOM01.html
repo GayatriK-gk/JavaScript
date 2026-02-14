@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom01</title>
+</head>
+<body>
+    <h1 id="title">DOM Practice</h1>
+    <button onclick="changeText()">Click Me</button>
+
+    <h1 class="heading">Dom is Powerful</h1>
+    <button onclick="changeStyle()">Change Style</button>
+    <script>
+        function changeText(){
+            document.getElementById("title").innerHTML="Text Changed";
+        }
+
+        function changeStyle(){
+            const element=document.querySelector(".heading");
+            element.style.color="blue";
+            element.style.fontSize="40px";
+            element.style.backgroundColor="yellow";
+        }
+    </script>
+</body>
+</html>

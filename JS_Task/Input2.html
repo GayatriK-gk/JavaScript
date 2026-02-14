@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+</head>
+<body>
+    <h2>Enter Your Name</h2>
+    <input type="text" id="username" placeholder="type your name">
+
+    <button id="btn">Submit</button>
+    <h3 id="result"></h3>
+
+    <script>
+        const button=document.getElementById("btn");
+        button.addEventListener("click",function(){
+            const name=document.getElementById("username").value;
+
+            document.getElementById("result").innerHTML="Hello "+ name;
+        });
+    </script>
+</body>
+</html>
