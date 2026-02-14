@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <h1>Arrow Function</h1>
+    <button onclick="runFunction()">Run Function</button>
+    <script>
+        //no parameter
+        const sayHi=()=>"Hi";
+
+        //one parameter
+        const square=n=>n*n;
+
+        //multiple parameter
+        const add=(a,b)=>a+b;
+
+        //if-else
+        const checkEven=num=>
+            num%2===0? "Even":"odd";
+        
+        //functioin to run all examples
+        function runFunction(){
+            console.log("No parameter:",sayHi());
+            console.log("one parameter(square5):",square(5));
+            console.log("multiple Parameter(2+4):",add(2,4));
+            console.log("chechEven(10):",checkEven(10));
+            console.log("checkEven(7):",checkEven(7));
+        }
+    </script>
+    
+</body>
+</html>
